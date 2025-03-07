@@ -1,0 +1,159 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 8vh; 
+  width: 100%;
+}
+.input-container {
+  position: relative;
+  display: inline-block; 
+}
+input[type="text"] {
+  width: 300px;
+  padding: 15px;
+  font-size: 16px;
+  padding-right: 40px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.clear-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+/*   padding: 5px; */
+  border-radius: 50%;
+} 
+
+.clear-button:hover {
+/*   color: black; */
+  color: #333;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top:0;
+  left:0;
+  position:fixed;
+  height: 6vh;
+  background-color: #e0e0e0;
+  align-items:start;
+}
+
+.top-nav a {
+  padding-top: 10px;
+  padding-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  width:20%;
+}
+
+.top-nav a:hover {
+  color: blue;
+}
+
+.top-nav-title{
+  margin:auto;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+  
+.gist-details-container {
+  display: flex;
+  width: 100%;
+  height: 85vh;
+  margin-top: 8vh; 
+}
+
+.files-list {
+  width: 20%;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.file-contents {
+  width: 80%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.table-row {
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.table-row:hover {
+  background-color: #f5f5f5;
+}
+
+.table-row.selected {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.error{
+  color:red
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px; 
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td:nth-child(1) {
+  width: 75%;
+  text-align: left;
+}
+
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.favorites-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.favorite-icon {
+  font-size: 24px;
+  color: gray;
+}
+
