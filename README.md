@@ -1,6 +1,8 @@
 # Overiew
 
-The purpose of this project is to demonstrate UI capabilities using React, Typescript, react-redux and related technologies through a front-end application that manages GitHub Gist access.
+The purpose of this project is to demonstrate UI capabilities using React, Typescript, react-redux and related technologies through a front-end application that manages GitHub Gist access. It includes the following features: 
+Reusable components using Typescript generics
+Performance optimization features such as memoization, useCallback and Suspense.
 
 ### Frameworks and Libraries
 
